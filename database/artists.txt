@@ -1,0 +1,162 @@
+
+INSERT INTO act (ActName, MusicType, ActId, ActPicture) VALUES ('Coldplay', 'Alternative Rock / Indie',1, null);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Eagles', 'Pop Music / Soft Rock',2);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Pink', 'Pop Music / Soft Rock',3);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Metallica', 'Hard Rock / Heavy Metal',4);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Katy Perry ', 'Pop Music / Soft Rock',5);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Journey ', 'Pop Music / Soft Rock',6);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Elton John ', 'Pop Music / Soft Rock',7);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Bruno Mars ', 'Pop Music / Soft Rock',8);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Maroon 5 ', 'Alternative Rock / Indie',9);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Rod Stewart ', 'Pop Music / Soft Rock',10);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Linkin Park ', 'Alternative Rock / Indie',11);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('U2', 'Alternative Rock / Indie',12);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Foo Fighters', 'Alternative Rock / Indie',13);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Paul McCartney', 'Pop Music / Soft Rock',14);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Avenged Sevenfold', 'Hard Rock / Heavy Metal',15);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Guns N Roses', 'Hard Rock / Heavy Metal',16);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Bob Seger', 'Pop Music / Soft Rock',17);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Drake' ,'Rap / Hip-Hop',18);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Bon Jovi' ,'Hard Rock / Heavy Metal',19);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Taylor Swift', 'Country / Folk',20);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Red Hot Chili Peppers','Alternative Rock / Indie',21);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Luke Bryan','Country / Folk',22);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Kevin Hart' ,'Stand-up / Comedy',23);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Billy Joel' ,'Pop Music / Soft Rock',24);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Lana Del Rey' ,'Alternative Rock / Indie',25);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Lady Gaga', 'Pop Music / Soft Rock',26);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Wiz Khalifa' ,'Rap / Hip-Hop',27);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Imagine Dragons' ,'Alternative Rock / Indie',28);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Kid Rock' ,'Hard Rock / Heavy Metal',29);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Pitbull', 'Rap / Hip-Hop',30);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Shakira', 'Latin Music',31);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Pearl Jam', 'Alternative Rock / Indie',32);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Marc Anthony' ,'Latin Music',33);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Kendrick Lamar' ,'Rap / Hip-Hop',34);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Scorpions','Hard Rock / Heavy Metal',35);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Styx', 'Pop Music / Soft Rock',36);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Sting' ,'Pop Music / Soft Rock',37);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Jimmy Buffett', 'Pop Music / Soft Rock',38);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Kings of Leon', 'Alternative Rock / Indie',39);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Ed Sheeran' ,'Alternative Rock / Indie',40);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Radiohead' 'Alternative Rock / Indie',41);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Andrea Bocelli', 'Classical',42);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Tim McGraw', 'Country / Folk',43);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Macklemore', 'Rap / Hip-Hop',44);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Chicago - The Band', 'Pop Music / Soft Rock',45);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Eric Clapton', 'Pop Music / Soft Rock',46);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Willie Nelson', 'Country / Folk',47);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Muse', 'Alternative Rock / Indie',48);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Jeff Dunham', 'Stand-up / Comedy',49);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Enrique Iglesias', 'Latin Music',50);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Yes' ,'Progressive Rock',51);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Tom Jones' ,'Pop Music / Soft Rock',52);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('The Beach Boys', 'Pop Music / Soft Rock',53);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Korn' ,'Hard Rock / Heavy Metal',54);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Joe Bonamassa', 'Jazz / Blues',55);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('John Legend', 'Soul / R&B',56);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Trans-Siberian Orchestra', 'Progressive Rock',57);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('The Weeknd' ,'Soul / R&B',58);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Eric Church' ,'Country / Folk',59);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Kenny Rogers', 'Country / Folk',60);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('The Killers' ,'Punk / Garage Rock',61);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Sleeping With Sirens', 'Hard Rock / Heavy Metal',62);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('The Script Pop', 'Music / Soft Rock',63);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Roger Waters', 'Progressive Rock',64);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Carlos Santana' ,'Pop Music / Soft Rock',65);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Marilyn Manson', 'Hard Rock / Heavy Metal',66);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Chris Brown', 'Soul / R&B',67);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('André Rieu', 'Classical',68);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Rise Against', 'Punk / Garage Rock',69);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Five Finger Death Punch','Hard Rock / Heavy Metal',70);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('2 Chainz' ,'Rap / Hip-Hop',71);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Stevie Nicks' ,'Pop Music / Soft Rock',72);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Lil Wayne','Rap / Hip-Hop',73);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Bryan Adams', 'Pop Music / Soft Rock',74);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Engelbert Humperdinck', 'Pop Music / Soft Rock',75);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Bob Dylan' ,'Pop Music / Soft Rock',76);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Duran Duran', 'Pop Music / Soft Rock',77);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Florida Georgia Line', 'Country / Folk',78);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('Bruce Springsteen', 'Pop Music / Soft Rock',79);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',80);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',81);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',82);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',83);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',84);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',85);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',86);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',87);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',88);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',89);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',90);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',91);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',92);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',93);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',94);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',95);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',96);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',97);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',98);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',99);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',100);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',101);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',102);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',103);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',104);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',105);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',106);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',107);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',108);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',109);
+INSERT INTO act (ActName, MusicType, ActId) VALUES ('', '',110);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+

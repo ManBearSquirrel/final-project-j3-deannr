@@ -1,0 +1,60 @@
+
+CREATE TABLE Act (
+                ActId INT AUTO_INCREMENT NOT NULL,
+                ActName VARCHAR(50) NOT NULL,
+                MusicGenre VARCHAR(50) NOT NULL,
+                ActPicture LONGBLOB DEFAULT NULL,
+                PRIMARY KEY (ActId)
+);
+
+
+CREATE TABLE Location (
+                LocationId INT AUTO_INCREMENT NOT NULL,
+                CityName VARCHAR(50) NOT NULL,
+                StateName VARCHAR(50) NOT NULL,
+                VenueSize INT DEFAULT NULL,
+                VenueName VARCHAR(50) DEFAULT NULL,
+                VenueType VARCHAR(50) DEFAULT NULL,
+                MapPicture LONGBLOB DEFAULT NULL,
+                PRIMARY KEY (LocationId)
+);
+
+
+CREATE TABLE EventDate (
+                EventDateId INT NOT NULL,
+                EventDate DATE NOT NULL,
+                ActId INT NOT NULL,
+                LocationId INT NOT NULL,
+                SetlistId INT DEFAULT NULL,
+                PRIMARY KEY (EventDateId)
+);
+
+
+CREATE TABLE Setlist (
+                SetlistId INT NOT NULL,
+                SetlistPicture LONGBLOB DEFAULT NULL,
+                SongsPerformed VARCHAR(50) DEFAULT NULL,
+                Remarks VARCHAR(500) DEFAULT NULL,
+                Rating INT DEFAULT NULL,
+                EventDateId INT NOT NULL,
+                PRIMARY KEY (SetlistId)
+);
+
+
+ALTER TABLE EventDate ADD CONSTRAINT act_eventdate_fk
+FOREIGN KEY (ActId)
+REFERENCES Act (ActId)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+ALTER TABLE EventDate ADD CONSTRAINT location_eventdate_fk
+FOREIGN KEY (LocationId)
+REFERENCES Location (LocationId)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+ALTER TABLE Setlist ADD CONSTRAINT eventdate_setlist_fk
+FOREIGN KEY (EventDateId)
+REFERENCES EventDate (EventDateId)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
