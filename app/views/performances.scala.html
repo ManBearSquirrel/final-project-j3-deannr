@@ -1,0 +1,15 @@
+@(eventdate : List[Performances])
+<!DOCTYPE html>
+<html>
+<h1>Performance Details</h1>
+ <table>
+        @for(performances <- eventdate){
+<tr>
+<label>Date of Show: </label><label>@performances.getEventDate</label><br>
+
+</tr>
+        }
+    </table>
+</div>
+</body>
+</html>
