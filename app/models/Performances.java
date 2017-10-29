@@ -12,69 +12,69 @@ public class Performances
 {
     @Id
 
-  //  @Column(name = "eventDateId")
-    //private int eventDateId;
+    @Column(name = "eventDateId")
+    private int eventDateId;
 
    @Column(name = "eventDate")
     private Date eventDate;
 
-    /* @Column(name = "actId")
+    @Column(name = "actId")
     private int actId;
 
     @Column(name = "locationId")
     private int locationId;
 
     @Column(name = "setlistId")
-    private int setlistId;
+    private Integer setlistId;
 
-    @Column(name = "cityName")
-    private String cityName;
+       @Column(name = "cityName")
+       private String cityName;
 
-    @Column(name = "stateName")
-    private String stateName;
+       @Column(name = "stateName")
+       private String stateName;
 
-    @Column(name = "venueSize")
-    private int venueSize;
+       @Column(name = "venueSize")
+       private Integer venueSize;
 
-    @Column(name = "venueName")
-    private String venueName;
+       @Column(name = "venueName")
+       private String venueName;
 
-    @Column(name = "venueType")
-    private String venueType;
+       @Column(name = "venueType")
+       private String venueType;
 
-    @Column(name = "venuePhoto")
-    private byte[]venuePhoto;
+       @Column(name = "venuePhoto")
+       private byte[]venuePhoto;
 
-    @Column(name = "actName")
-    private String actName;
+       @Column(name = "actName")
+       private String actName;
 
-    @Column(name = "musicGenre")
-    private String musicGenre;
+       @Column(name = "musicGenre")
+       private String musicGenre;
 
-    @Column(name = "actPhoto")
-    private byte[]actPhoto;
+       @Column(name = "actPhoto")
+       private byte[]actPhoto;
 
-    @Column(name = "performanceRating")
-    private int performanceRating;
+       @Column(name = "performanceRating")
+       private Integer performanceRating;
 
-    @Column(name = "setlistPhoto")
-    private byte[]setlistPhoto;
+       @Column(name = "setlistPhoto")
+       private byte[]setlistPhoto;
 
-    @Column(name = "remarks")
-    private String remarks;
+       @Column(name = "remarks")
+       private String remarks;
 
-    @Column(name = "songsPerformed")
-    private String songsPerformed;
+       @Column(name = "songsPerformed")
+       private String songsPerformed;
 
-    public String getActName()
-    {
-        return actName;
-    }
+       public String getActName()
+       {
+           return actName;
+       }
 
-    public void setActName(String actName)
-    {
-        this.actName = actName;
-    }
+       public void setActName(String actName)
+       {
+           this.actName = actName;
+       }
 
     public int getEventDateId()
     {
@@ -85,7 +85,7 @@ public class Performances
     {
         this.eventDateId = eventDateId;
     }
-    */
+
 
   public Date getEventDate()
     {
@@ -96,7 +96,7 @@ public class Performances
     {
         this.eventDate = eventDate;
     }
- /*
+
     public int getActId()
     {
         return actId;
@@ -117,12 +117,12 @@ public class Performances
         this.locationId = locationId;
     }
 
-    public int getSetlistId()
+    public Integer getSetlistId()
     {
         return setlistId;
     }
 
-    public void setSetlistId(int setlistId)
+    public void setSetlistId(Integer setlistId)
     {
         this.setlistId = setlistId;
     }
@@ -147,12 +147,12 @@ public class Performances
         this.stateName = stateName;
     }
 
-    public int getVenueSize()
+    public Integer getVenueSize()
     {
         return venueSize;
     }
 
-    public void setVenueSize(int venueSize)
+    public void setVenueSize(Integer venueSize)
     {
         this.venueSize = venueSize;
     }
@@ -207,12 +207,12 @@ public class Performances
         this.actPhoto = actPhoto;
     }
 
-    public int getPerformanceRating()
+    public Integer getPerformanceRating()
     {
         return performanceRating;
     }
 
-    public void setPerformanceRating(int performanceRating)
+    public void setPerformanceRating(Integer performanceRating)
     {
         this.performanceRating = performanceRating;
     }
@@ -246,5 +246,5 @@ public class Performances
     {
         this.songsPerformed = songsPerformed;
     }
-    */
+
 }

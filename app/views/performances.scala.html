@@ -5,7 +5,23 @@
  <table>
         @for(performances <- eventdate){
 <tr>
+<label>@performances.getEventDateId) </label>
 <label>Date of Show: </label><label>@performances.getEventDate</label><br>
+<label>Act ID: </label><label>@performances.getActId </label><br>
+<label>Act Name: </label><label>@performances.getActName </label><br>
+<label>Music Genre: </label><label>@performances.getMusicGenre </label><br>
+<label>Act Picture: </label><label>@performances.getActPhoto </label><br>
+<label>Location ID: </label><label>@performances.getLocationId</label><br>
+<label>Venue Name: </label><label>@performances.getVenueName</label><br>
+<label>@performances.getCityName, @performances.getStateName</label><br>
+<label>Venue Type: </label><label>@performances.getVenueType</label><br>
+<label>Venue Size: </label><label>@performances.getVenueSize</label><br>
+<label>Venue Picture: </label><label>@performances.getVenuePhoto </label><br>
+<label>Setlist ID: </label><label>@performances.getSetlistId</label><br>
+<label>Songs Pereformed: </label><label>@performances.getSongsPerformed</label><br>
+<label>Performance Rating: </label><label>@performances.getPerformanceRating</label><br>
+<label>Remarks: </label><label>@performances.getRemarks</label><br>
+<label>Setlist Picture: </label><label>@performances.getSetlistPhoto </label><br>
 
 </tr>
         }

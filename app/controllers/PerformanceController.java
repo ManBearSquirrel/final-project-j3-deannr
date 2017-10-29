@@ -27,9 +27,13 @@ public class PerformanceController extends Controller
         List<Performances> performances =
                jpaApi.
             em().
-            createNativeQuery("SELECT EventDate " +
-                    "FROM eventdate " +
-                    "ORDER BY EventDateId", Performances.class).
+            createNativeQuery("SELECT ed.EventDateId, EventDate, a.ActId, l.LocationId, ed.SetlistId, ActName, MusicGenre, ActPhoto, " +
+                    "CityName, StateName, VenueSize, VenueName, VenueType, VenuePhoto, SetlistPhoto, SongsPerformed, Remarks, PerformanceRating " +
+                    "FROM eventdate ed " +
+                    "JOIN Act a ON ed.ActId = a.ActId " +
+                    "JOIN Location l ON ed.LocationId = l.LocationId " +
+                    "LEFT OUTER JOIN Setlist s ON ed.EventDateId = s.EventDateId " +
+                    "ORDER BY ed.EventDateId", Performances.class).
             getResultList();
 
         return ok(views.html.performances.render(performances));
