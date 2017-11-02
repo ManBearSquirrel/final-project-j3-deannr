@@ -10,3 +10,9 @@ GET     /                           controllers.HomeController.index
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 GET /performances                   controllers.PerformanceController.getPerformances
+GET /addperformance                 controllers.PerformanceController.newPerformance
+POST /addperformance                controllers.PerformanceController.addPerformance
+GET  /actphoto/:id                  controllers.PerformanceController.getActPhoto(id:Integer)
+GET  /venuephoto/:id                controllers.PerformanceController.getVenuePhoto(id:Integer)
+GET  /setlistphoto/:id              controllers.PerformanceController.getSetlistPhoto(id:Integer)
+GET /performance/:id                   controllers.PerformanceController.getPerformance(id:Integer)

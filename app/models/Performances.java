@@ -13,16 +13,16 @@ public class Performances
     @Id
 
     @Column(name = "eventDateId")
-    private int eventDateId;
+        private Integer eventDateId;
 
    @Column(name = "eventDate")
     private Date eventDate;
 
     @Column(name = "actId")
-    private int actId;
+    private Integer actId;
 
     @Column(name = "locationId")
-    private int locationId;
+    private Integer locationId;
 
     @Column(name = "setlistId")
     private Integer setlistId;
@@ -42,23 +42,14 @@ public class Performances
        @Column(name = "venueType")
        private String venueType;
 
-       @Column(name = "venuePhoto")
-       private byte[]venuePhoto;
-
        @Column(name = "actName")
        private String actName;
 
        @Column(name = "musicGenre")
        private String musicGenre;
 
-       @Column(name = "actPhoto")
-       private byte[]actPhoto;
-
        @Column(name = "performanceRating")
        private Integer performanceRating;
-
-       @Column(name = "setlistPhoto")
-       private byte[]setlistPhoto;
 
        @Column(name = "remarks")
        private String remarks;
@@ -76,12 +67,12 @@ public class Performances
            this.actName = actName;
        }
 
-    public int getEventDateId()
+    public Integer getEventDateId()
     {
         return eventDateId;
     }
 
-    public void setEventDateId(int eventDateId)
+    public void setEventDateId(Integer eventDateId)
     {
         this.eventDateId = eventDateId;
     }
@@ -97,22 +88,22 @@ public class Performances
         this.eventDate = eventDate;
     }
 
-    public int getActId()
+    public Integer getActId()
     {
         return actId;
     }
 
-    public void setActId(int actId)
+    public void setActId(Integer actId)
     {
         this.actId = actId;
     }
 
-    public int getLocationId()
+    public Integer getLocationId()
     {
         return locationId;
     }
 
-    public void setLocationId(int locationId)
+    public void setLocationId(Integer locationId)
     {
         this.locationId = locationId;
     }
@@ -177,15 +168,6 @@ public class Performances
         this.venueType = venueType;
     }
 
-    public byte[] getVenuePhoto()
-    {
-        return venuePhoto;
-    }
-
-    public void setVenuePhoto(byte[] venuePhoto)
-    {
-        this.venuePhoto = venuePhoto;
-    }
 
     public String getMusicGenre()
     {
@@ -197,15 +179,6 @@ public class Performances
         this.musicGenre = musicGenre;
     }
 
-    public byte[] getActPhoto()
-    {
-        return actPhoto;
-    }
-
-    public void setActPhoto(byte[] actPhoto)
-    {
-        this.actPhoto = actPhoto;
-    }
 
     public Integer getPerformanceRating()
     {
@@ -217,17 +190,7 @@ public class Performances
         this.performanceRating = performanceRating;
     }
 
-    public byte[] getSetlistPhoto()
-    {
-        return setlistPhoto;
-    }
-
-    public void setSetlistPhoto(byte[] setlistPhoto)
-    {
-        this.setlistPhoto = setlistPhoto;
-    }
-
-    public String getRemarks()
+       public String getRemarks()
     {
         return remarks;
     }

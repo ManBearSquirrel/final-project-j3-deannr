@@ -1,0 +1,67 @@
+@(performances : Performances)
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method="POST">
+    <h1>Performance Details</h1>
+    <label>Event Date:</label>
+    <input type="date" name="eventDate" id="eventDate" value="@performances.getEventDate">
+    <br>
+    <br>
+    <label>Act Name:</label>
+    <input type="text" name="actName" id="actName" value="@performances.getActName">
+    <br>
+    <br>
+    <label>Music Genre:</label>
+    <input type="text" name="musicGenre" id="musicGenre" value="@performances.getMusicGenre">
+    <br>
+    <br>
+    <label>City Name:</label>
+    <input type="text" name="cityName" id="cityName" value="@performances.getCityName">
+    <br>
+    <br>
+    <label>State and/or Country: </label>
+    <input type="text" name="stateName" id="stateName" value="@performances.getStateName">
+    <br>
+    <br>
+    <label>Venue Size:</label>
+    <input type="text" name="venueSize" id="venueSize" value="@performances.getVenueSize">
+    <br>
+    <br>
+    <label>Venue Name:</label>
+    <input type="text" name="venueName" id="venueName" value="@performances.getVenueName">
+    <br>
+    <br>
+    <label>Venue Type:</label>
+    <input type="text" name="venueType" id="venueType" value="@performances.getVenueType">
+    <br>
+    <br>
+    <label>Venue Photo:</label>
+    <br>
+    <br>
+
+    <label>Performance Rating:</label>
+    <input type="text" name="performanceRating" id="performanceRating" value="@performances.getPerformanceRating">
+    <br>
+    <br>
+    <label>Remarks:</label>
+    <input type="text" name="remarks" id="remarks" value="@performances.getRemarks">
+    <br>
+    <br>
+    <label>Act Photo:</label>
+
+    <br>
+    <br>
+    <label>Songs Performed:</label>
+    <input type="text" name="songsPerformed" id="songsPerformed" value="@performances.getSongsPerformed">
+    <br>
+    <br>
+    <label>Setlist Photo:</label>
+
+    <br>
+    <br>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
