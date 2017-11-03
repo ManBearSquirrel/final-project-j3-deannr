@@ -15,4 +15,4 @@ POST /addperformance                controllers.PerformanceController.addPerform
 GET  /actphoto/:id                  controllers.PerformanceController.getActPhoto(id:Integer)
 GET  /venuephoto/:id                controllers.PerformanceController.getVenuePhoto(id:Integer)
 GET  /setlistphoto/:id              controllers.PerformanceController.getSetlistPhoto(id:Integer)
-GET /performance/:id                   controllers.PerformanceController.getPerformance(id:Integer)
+GET /performance/:id                controllers.PerformanceController.getPerformance(id:Integer)

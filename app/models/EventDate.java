@@ -1,9 +1,12 @@
 package models;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Entity
 public class EventDate
 {
     @Id
@@ -37,7 +40,19 @@ public class EventDate
     {
         return eventDate;
     }
+    public String getFormattedEventDate()
+    {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
+        if (eventDate == null)
+        {
+            return null;
+        }
+        else
+        {
+            return sdf.format(eventDate);
+        }
+    }
     public void setEventDate(Date eventDate)
     {
         this.eventDate = eventDate;

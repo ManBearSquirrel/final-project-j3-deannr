@@ -5,23 +5,17 @@
  <table>
         @for(performances <- eventdate){
 <tr>
-<label>@performances.getEventDateId) </label>
-<label>Date of Show: </label><label><@performances.getEventDate</label><br>
+<label><a href="/performance/@performances.getEventDateId">@performances.getEventDateId)</a> </label>
+<label>Date of Show: </label><label>@performances.getFormattedEventDate</label><br>
 
 <label>Act Name: </label><label>@performances.getActName </label><br>
-<label>Music Genre: </label><label>@performances.getMusicGenre </label><br>
+
 <label>Act Picture: </label><br>
 
-<label>Venue Name: </label><label>@performances.getVenueName</label><br>
+<label>Venue Name: </label><label> <a href="/performance/@performances.getEventDateId">@performances.getVenueName</a></label><br>
 <label>@performances.getCityName, @performances.getStateName</label><br>
-<label>Venue Type: </label><label>@performances.getVenueType</label><br>
-<label>Venue Size: </label><label>@performances.getVenueSize</label><br>
-
-
-<label>Songs Performed: </label><label>@performances.getSongsPerformed</label><br>
-<label>Performance Rating: </label><label>@performances.getPerformanceRating</label><br>
-<label>Remarks: </label><label>@performances.getRemarks</label><br>
-
+<br>
+<br>
 
 </tr>
         }

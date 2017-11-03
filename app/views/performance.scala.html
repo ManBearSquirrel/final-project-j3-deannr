@@ -6,16 +6,32 @@
 <form method="POST">
     <h1>Performance Details</h1>
     <label>Event Date:</label>
-    <input type="date" name="eventDate" id="eventDate" value="@performances.getEventDate">
+    <input type="date" name="eventDate" id="eventDate" value="@performances.getFormattedEventDate">
     <br>
     <br>
     <label>Act Name:</label>
     <input type="text" name="actName" id="actName" value="@performances.getActName">
     <br>
     <br>
+
+    <img src="/actphoto/@performances.getActId" width="200">
+    <input type="file" id="actphoto" name="actphoto"><br>
+
+    <br>
+    <br>
     <label>Music Genre:</label>
     <input type="text" name="musicGenre" id="musicGenre" value="@performances.getMusicGenre">
     <br>
+    <br>
+    <label>Venue Name:</label>
+    <input type="text" name="venueName" id="venueName" value="@performances.getVenueName">
+
+    <br>
+    <br>
+
+
+    <img src="/venuephoto/@performances.getLocationId" width="200">
+    <input type="file" id="venuephoto" name="venuephoto"><br><br>
     <br>
     <label>City Name:</label>
     <input type="text" name="cityName" id="cityName" value="@performances.getCityName">
@@ -29,18 +45,12 @@
     <input type="text" name="venueSize" id="venueSize" value="@performances.getVenueSize">
     <br>
     <br>
-    <label>Venue Name:</label>
-    <input type="text" name="venueName" id="venueName" value="@performances.getVenueName">
-    <br>
-    <br>
-    <label>Venue Type:</label>
+       <label>Venue Type:</label>
     <input type="text" name="venueType" id="venueType" value="@performances.getVenueType">
-    <br>
-    <br>
-    <label>Venue Photo:</label>
-    <br>
-    <br>
 
+
+    <br>
+    <br>
     <label>Performance Rating:</label>
     <input type="text" name="performanceRating" id="performanceRating" value="@performances.getPerformanceRating">
     <br>
@@ -49,18 +59,15 @@
     <input type="text" name="remarks" id="remarks" value="@performances.getRemarks">
     <br>
     <br>
-    <label>Act Photo:</label>
 
-    <br>
-    <br>
     <label>Songs Performed:</label>
     <input type="text" name="songsPerformed" id="songsPerformed" value="@performances.getSongsPerformed">
     <br>
     <br>
-    <label>Setlist Photo:</label>
 
-    <br>
-    <br>
+
+    <img src="/setlistphoto/@performances.getSetlistId" width="200">
+    <input type="file" id="setlistphoto" name="setlistphoto"><br><br>
     <button type="submit">Save</button>
 </form>
 </body>

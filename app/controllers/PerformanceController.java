@@ -133,13 +133,13 @@ public class PerformanceController extends Controller
             setlistPhoto = null;
         }
         Http.MultipartFormData.FilePart<File> venuePhotoPart = formData.getFile("venuePhoto");
-        File venuefile = venuePhotoPart.getFile();
+        File locationfile = venuePhotoPart.getFile();
 
         byte[] venuePhoto;
 
         try
         {
-            venuePhoto = Files.toByteArray(venuefile);
+            venuePhoto = Files.toByteArray(locationfile);
         }
         catch (Exception e)
         {

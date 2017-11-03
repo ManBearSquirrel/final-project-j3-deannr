@@ -1,8 +1,10 @@
 package models;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
+@Entity
 public class Act
 {
     @Id
@@ -18,6 +20,8 @@ public class Act
 
     @Column(name = "actPhoto")
     private byte[]actPhoto;
+
+
 
     public int getActId()
     {
