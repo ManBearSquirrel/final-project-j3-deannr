@@ -1,3 +1,4 @@
+@(acts : List[Act], locations : List[Location], setlists : List[Setlist])
 
 <!DOCTYPE html>
 <html>
@@ -10,53 +11,13 @@
     <input type="date" name="eventDate" id="eventDate" >
     <br>
     <br>
-    <label>Act ID:</label>
-    <input type="text" name="actId" id="actId" >
+    <label>Act Name:</label><select name="actId">
+    @for(act <- acts){
+    <option value="@act.getActId()">@act.getActName()</option>
+    }</select>
     <br>
     <br>
-    <label>Location ID:</label>
-    <input type="text" name="locationId" id="locationId" >
-    <br>
-    <br>
-    <label>Setlist ID:</label>
-    <input type="text" name="setlistId" id="setlistId" >
-    <br>
-    <br>
-    <label>City Name:</label>
-    <input type="text" name="cityName" id="cityName" >
-    <br>
-    <br>
-    <label>State and/or Country: </label>
-    <input type="text" name="stateName" id="stateName">
-    <br>
-    <br>
-    <label>Venue Size:</label>
-    <input type="text" name="venueSize" id="venueSize" >
-    <br>
-    <br>
-    <label>Venue Name:</label>
-    <input type="text" name="venueName" id="venueName" >
-    <br>
-    <br>
-    <label>Venue Type:</label>
-    <input type="text" name="venueType" id="venueType">
-    <br>
-    <br>
-    <label>Venue Photo:</label>
-    <div class="col-xs-4">
 
-        <input type="file" id="venuephoto" name="venuephoto">
-    </div>
-    <br>
-    <br>
-    <label>Act Name:</label>
-    <input type="text" name="actName" id="actName" >
-    <br>
-    <br>
-    <label>Music Genre:</label>
-    <input type="text" name="musicGenre" id="musicGenre" >
-    <br>
-    <br>
     <label>Performance Rating:</label>
     <input type="text" name="performanceRating" id="performanceRating" >
     <br>
@@ -65,22 +26,24 @@
     <input type="text" name="remarks" id="remarks">
     <br>
     <br>
-    <label>Act Photo:</label>
-    <div class="col-xs-4">
 
-        <input type="file" id="actphoto" name="actphoto">
-        <br>
-        <br>
-        <label>Songs Performed:</label>
-        <input type="text" name="songsPerformed" id="songsPerformed" >
-        <br>
-        <br>
-        <label>Setlist Photo:</label>
-        <div class="col-xs-4">
 
-            <input type="file" id="setlistphoto" name="setlistphoto">
+        <label>Setlist Photo:</label><select name="setlistId">
+        @for(setlist <- setlists){
+        <option value="@setlist.getSetlistId()">@setlist.getSetlistId()</option>
+        }</select>
+
             <br>
             <br>
+
+            <label>Venue Name:</label><select name="locationId">
+            @for(location <- locations){
+            <option value="@location.getLocationId()">@location.getVenueName()</option>
+        }</select>
+
+            <br>
+            <br>
+
             <button type="submit">Save</button>
 </form>
 </body>

@@ -1,10 +1,7 @@
 package controllers;
 
 import com.google.common.io.Files;
-import models.Act;
-import models.Location;
-import models.Performances;
-import models.Setlist;
+import models.*;
 import play.data.DynamicForm;
 import play.data.FormFactory;
 import play.db.jpa.JPAApi;
@@ -33,6 +30,11 @@ public class PerformanceController extends Controller
         this.jpaApi = jpaApi;
     }
 
+    public Result homepage()
+    {
+        return ok(views.html.homepage.render());
+    }
+
     @Transactional(readOnly = true)
     public Result getPerformances()
     {
@@ -42,7 +44,7 @@ public class PerformanceController extends Controller
                jpaApi.
             em().
             createNativeQuery("SELECT ed.EventDateId, EventDate, a.ActId, l.LocationId, ed.SetlistId, ActName, MusicGenre, " +
-                    "CityName, StateName, VenueSize, VenueName, VenueType, SongsPerformed, Remarks, PerformanceRating " +
+                    "CityName, StateName, VenueSize, VenueName, VenueType, Remarks, PerformanceRating " +
                     "FROM eventdate ed " +
                     "JOIN Act a ON ed.ActId = a.ActId " +
                     "JOIN Location l ON ed.LocationId = l.LocationId " +
@@ -62,7 +64,7 @@ public class PerformanceController extends Controller
                 (Performances)jpaApi.
                         em().
                         createNativeQuery("SELECT ed.EventDateId, EventDate, a.ActId, l.LocationId, ed.SetlistId, ActName, MusicGenre, " +
-                                "CityName, StateName, VenueSize, VenueName, VenueType, SongsPerformed, Remarks, PerformanceRating " +
+                                "CityName, StateName, VenueSize, VenueName, VenueType, Remarks, PerformanceRating " +
                                 "FROM eventdate ed " +
                                 "JOIN Act a ON ed.ActId = a.ActId " +
                                 "JOIN Location l ON ed.LocationId = l.LocationId " +
@@ -94,77 +96,26 @@ public class PerformanceController extends Controller
         int actId = Integer.parseInt(form.get("actId"));
         int locationId = Integer.parseInt(form.get("locationId"));
         Integer setlistId = Integer.parseInt(form.get("setlistId"));
-        String cityName = form.get("cityName");
-        String stateName = form.get("stateName");
-        Integer venueSize = Integer.parseInt(form.get("venueSize"));
+
         String venueName = form.get("venueName");
-        String venueType = form.get("venueType");
+
         String actName = form.get("actName");
-        String musicGenre = form.get("musicGenre");
+
         Integer performanceRating = Integer.parseInt(form.get("performanceRating"));
         String remarks = form.get("remarks");
-        String songsPerformed = form.get("songsPerformed");
 
-        Http.MultipartFormData<File> formData = request().body().asMultipartFormData();
-        Http.MultipartFormData.FilePart<File> actPhotoPart = formData.getFile("actPhoto");
-        File actfile = actPhotoPart.getFile();
 
-        byte[] actPhoto;
 
-        try
-        {
-            actPhoto = Files.toByteArray(actfile);
-        }
-        catch (Exception e)
-        {
-            actPhoto = null;
-        }
-        Http.MultipartFormData.FilePart<File> setlistPhotoPart = formData.getFile("setlistPhoto");
-        File setlistfile = setlistPhotoPart.getFile();
-
-        byte[] setlistPhoto;
-
-        try
-        {
-            setlistPhoto = Files.toByteArray(setlistfile);
-        }
-        catch (Exception e)
-        {
-            setlistPhoto = null;
-        }
-        Http.MultipartFormData.FilePart<File> venuePhotoPart = formData.getFile("venuePhoto");
-        File locationfile = venuePhotoPart.getFile();
-
-        byte[] venuePhoto;
-
-        try
-        {
-            venuePhoto = Files.toByteArray(locationfile);
-        }
-        catch (Exception e)
-        {
-            venuePhoto = null;
-        }
-
-        Performances performances = new Performances();
+        EventDate performances = new EventDate();
 
 
         performances.setEventDate(eventDate);
         performances.setActId(actId);
         performances.setLocationId(locationId);
         performances.setSetlistId(setlistId);
-        performances.setCityName(cityName);
-        performances.setStateName(stateName);
-        performances.setVenueSize(venueSize);
-        performances.setVenueName(venueName);
-        performances.setVenueType(venueType);
 
-        performances.setActName(actName);
-        performances.setMusicGenre(musicGenre);
-        performances.setPerformanceRating(performanceRating);
-        performances.setRemarks(remarks);
 
-        performances.setSongsPerformed(songsPerformed);
+
 
 
         jpaApi.em().persist(performances);
@@ -176,8 +127,22 @@ public class PerformanceController extends Controller
     public Result newPerformance()
     {
 
+        List<Act> acts = jpaApi.
+                em().
+                createQuery("SELECT a FROM Act a ", Act.class).
+                getResultList();
 
-        return ok(views.html.addperformance.render());
+        List<Location> locations = jpaApi.
+                em().
+                createQuery("SELECT l FROM Location l ", Location.class).
+                getResultList();
+
+        List<Setlist> setlists = jpaApi.
+                em().
+                createQuery("SELECT s FROM Setlist s ", Setlist.class).
+                getResultList();
+
+        return ok(views.html.addperformance.render(acts, locations, setlists));
 
     }
 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Concert Album</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+<body>
+<h1>Concerts</h1>
+<p>Collect information about concerts you've attended
+</p>
+<form action="@routes.PerformanceController.getPerformances" method="get">
+    <input type="submit" value="List of Performances"/>
+</form>
+<form action="@routes.PerformanceController.newPerformance" method="get">
+    <input type="submit" value="Add Performance"/>
+</form>
+
+</form>
+<img src="assets/images/concert.jpg" width="100"/>
+</body>
+</html>

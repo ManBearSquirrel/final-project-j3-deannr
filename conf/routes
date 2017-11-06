@@ -16,3 +16,4 @@ GET  /actphoto/:id                  controllers.PerformanceController.getActPhot
 GET  /venuephoto/:id                controllers.PerformanceController.getVenuePhoto(id:Integer)
 GET  /setlistphoto/:id              controllers.PerformanceController.getSetlistPhoto(id:Integer)
 GET /performance/:id                controllers.PerformanceController.getPerformance(id:Integer)
+GET /homepage                       controllers.PerformanceController.homepage

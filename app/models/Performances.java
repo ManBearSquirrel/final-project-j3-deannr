@@ -55,8 +55,6 @@ public class Performances
        @Column(name = "remarks")
        private String remarks;
 
-       @Column(name = "songsPerformed")
-       private String songsPerformed;
 
 
 
@@ -216,14 +214,5 @@ public class Performances
         this.remarks = remarks;
     }
 
-    public String getSongsPerformed()
-    {
-        return songsPerformed;
-    }
-
-    public void setSongsPerformed(String songsPerformed)
-    {
-        this.songsPerformed = songsPerformed;
-    }
 
 }

@@ -21,8 +21,6 @@ public class Setlist
     @Column(name = "remarks")
     private String remarks;
 
-    @Column(name = "songsPerformed")
-    private String songsPerformed;
 
     @Column(name = "eventDateId")
     private int eventDateId;
@@ -67,15 +65,6 @@ public class Setlist
         this.remarks = remarks;
     }
 
-    public String getSongsPerformed()
-    {
-        return songsPerformed;
-    }
-
-    public void setSongsPerformed(String songsPerformed)
-    {
-        this.songsPerformed = songsPerformed;
-    }
 
     public int getEventDateId()
     {
